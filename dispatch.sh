@@ -22,7 +22,6 @@ go get &>>$log_file
 go build &>>$log_file
 echo $?
 
-
 print_heading "Start Application Service"
 systemctl daemon-reload &>>$log_file
 systemctl enable dispatch &>>$log_file
