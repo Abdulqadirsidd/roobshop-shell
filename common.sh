@@ -101,7 +101,7 @@ maven_setup() {
 
   print_heading "Download Application Dependencies"
   mvn clean package &>>$log_file
-  mv target/$app_nama-1.0.jar $app_nama.jar &>>$log_file
+  mv target/$app_name-1.0.jar $app_name.jar &>>$log_file
   status_check $?
 
   print_heading "Install MySQL Client"
