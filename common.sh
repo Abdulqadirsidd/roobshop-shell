@@ -28,6 +28,8 @@ app_prerequisites() {
   status_check $?
 }
 
+
+
 print_heading() {
   echo -e "$color $1 $no_color" &>>$log_file
   echo -e "$color $1 $no_color"
