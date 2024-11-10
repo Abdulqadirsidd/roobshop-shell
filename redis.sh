@@ -9,7 +9,7 @@ print_heading "Enable Redis 7 Version"
 dnf module enable redis:7 -y &>>$log_file
 status_check $?
 
-print_heading "Install Resdis"
+print_heading "Install Redis"
 dnf install redis -y &>>$log_file
 status_check $?
 
