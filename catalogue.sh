@@ -12,7 +12,7 @@ dnf install mongodb-mongosh -y &>>$log_file
 status_check $?
 
 print_heading "Load Master Data"
-mongosh --host mongodb.abdulqadir.shop </app/db/master-data.js
+mongosh --host mongodb.abdulqadir.shop </app/db/master-data.js &>>$log_file
 status_check $?
 
 print_heading "Restart Catalogue Service"
