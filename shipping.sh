@@ -11,7 +11,7 @@ MYSQL_ROOT_PASSWORD=$1
 maven_setup
 
 print_heading "Install MySQL Client"
-dnf install mysql -y &>>$log_file
+dnf install mysql -y  &>>$log_file
 status_check $?
 
 for sql_file in schema app-user master-data; do
