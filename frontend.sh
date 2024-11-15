@@ -32,8 +32,7 @@ print_heading "Extract Application content"
 unzip /tmp/frontend.zip &>>$log_file
 status_check $?
 
-# Install ansible
-# improvng
+
 print_heading "Start Nginx"
 systemctl enable nginx &>>$log_file
 systemctl restart nginx &>>$log_file
